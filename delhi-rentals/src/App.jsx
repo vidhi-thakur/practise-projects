@@ -1,6 +1,7 @@
 import './App.css'
 import Footer from './components/footer/Footer'
 import Header from './components/header/Header'
+import PropertyList from './components/propertyList/PropertyList'
 import Title from './components/title/Title'
 
 function App() {
