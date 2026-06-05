@@ -24,7 +24,11 @@ const PropertyList = () => {
               bedrooms={l.bedrooms}
               area={l.area}
             />
-            <PropertyAttribute />
+            <PropertyAttribute
+              address={l.address}
+              cost={l.cost}
+              availableFrom={l.availableFrom}
+            />
           </div>
         );
       })}
