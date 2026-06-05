@@ -15,7 +15,7 @@ const Footer = () => {
       {isOpen ? (
         <div className={styles.box}>
           <p className={styles.open}>
-            <Clock size={20} />
+            <Clock size={18} />
             <span>We are open now!</span>
           </p>
           <p>Call us at: (555) 123-4567</p>
@@ -23,7 +23,7 @@ const Footer = () => {
       ) : (
         <div className={styles.box}>
           <p className={styles.closed}>
-            <Clock size={20} />
+            <Clock size={18} />
             <span>We are closed now!</span>
           </p>
           <p>Opening hours: Monday to Friday, 9am to 5pm.</p>
