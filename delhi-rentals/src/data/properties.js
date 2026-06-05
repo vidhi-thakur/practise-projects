@@ -1,0 +1,110 @@
+export const properties = [
+    {
+      id: 1,
+      bedrooms: 2,
+      bathroom: 2,
+      area: 950,
+      propertyType: "house",
+      isAvailable: true,
+      address: "Rohini Sector 15, Delhi",
+      cost: "₹28,000/month",
+      availableFrom: "2026-08-01",
+      image: "/image1.jpg"
+    },
+    {
+      id: 2,
+      bedrooms: 3,
+      bathroom: 3,
+      area: 1450,
+      propertyType: "house",
+      isAvailable: false,
+      address: "Janakpuri, Delhi",
+      cost: "₹42,000/month",
+      availableFrom: "2026-09-10",
+      image: "/image2.jpg"
+    },
+    {
+      id: 3,
+      bedrooms: 1,
+      bathroom: 1,
+      area: 600,
+      propertyType: "house",
+      isAvailable: true,
+      address: "Laxmi Nagar, Delhi",
+      cost: "₹18,000/month",
+      availableFrom: "2026-07-15",
+      image: "/image3.jpg"
+    },
+    {
+      id: 4,
+      bedrooms: 4,
+      bathroom: 4,
+      area: 2200,
+      propertyType: "house",
+      isAvailable: true,
+      address: "Greater Kailash 2, Delhi",
+      cost: "₹85,000/month",
+      availableFrom: "2026-08-20",
+      image: "/image4.jpg"
+    },
+    {
+      id: 5,
+      bedrooms: 2,
+      bathroom: 2,
+      area: 1100,
+      propertyType: "house",
+      isAvailable: false,
+      address: "Dwarka Sector 12, Delhi",
+      cost: "₹32,000/month",
+      availableFrom: "2026-10-01",
+      image: "/image5.jpg"
+    },
+    {
+      id: 6,
+      bedrooms: 3,
+      bathroom: 2,
+      area: 1350,
+      propertyType: "house",
+      isAvailable: true,
+      address: "Pitampura, Delhi",
+      cost: "₹39,000/month",
+      availableFrom: "2026-07-25",
+      image: "/image6.jpg"
+    },
+    {
+      id: 7,
+      bedrooms: 5,
+      bathroom: 5,
+      area: 3200,
+      propertyType: "house",
+      isAvailable: true,
+      address: "Vasant Kunj, Delhi",
+      cost: "₹1,20,000/month",
+      availableFrom: "2026-09-05",
+      image: "/image7.jpg"
+    },
+    {
+      id: 8,
+      bedrooms: 2,
+      bathroom: 1,
+      area: 850,
+      propertyType: "house",
+      isAvailable: false,
+      address: "Uttam Nagar, Delhi",
+      cost: "₹22,000/month",
+      availableFrom: "2026-08-12",
+      image: "/image8.jpg"
+    },
+    {
+      id: 9,
+      bedrooms: 3,
+      bathroom: 3,
+      area: 1600,
+      propertyType: "house",
+      isAvailable: true,
+      address: "Saket, Delhi",
+      cost: "₹58,000/month",
+      availableFrom: "2026-07-30",
+      image: "/image9.jpg"
+    }
+  ];
