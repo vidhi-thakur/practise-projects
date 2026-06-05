@@ -12,7 +12,7 @@ const Header = () => {
       </div>
       <div className={styles.box}>
         <Phone size={20} />
-        <span>62937393848</span>
+        <span>(555) 123-4567</span>
       </div>
       <div className={styles.box}>
         <Mail size={20} />
