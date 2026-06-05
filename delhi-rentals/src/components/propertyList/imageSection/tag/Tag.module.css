@@ -1,0 +1,14 @@
+.container {
+  background-color: var(--theme-green);
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: inline-block;
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  padding: 6px;
+  border-radius: 4px;
+  font-size: 0.75rem;
+}
+

@@ -9,8 +9,21 @@ const PropertyList = () => {
     <div className={styles.container}>
       {list.map((l) => {
         return (
-          <div className={styles.property}>
-            <ImageSection img={l.image} />
+          <div
+            key={l.id}
+            className={styles.property}
+            style={{
+              opacity: l.isAvailable ? 0.7 : 1,
+            }}
+          >
+            <ImageSection
+              img={l.image}
+              tag={l.propertyType}
+              isAvailable={l.isAvailable}
+              bathroom={l.bathroom}
+              bedrooms={l.bedrooms}
+              area={l.area}
+            />
             <PropertyAttribute />
           </div>
         );

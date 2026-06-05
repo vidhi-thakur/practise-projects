@@ -1,0 +1,10 @@
+.banner {
+    background-color: brown;
+    color: white;
+    text-transform: capitalize;
+    transform: rotate(-45deg);
+    padding: 4px 30px;
+    position: absolute;
+    top: 24px;
+    left: -32px;
+}
