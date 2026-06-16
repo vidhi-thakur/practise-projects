@@ -1,8 +1,11 @@
+import styles from "./styles/Title.module.css";
 
 function Title() {
   return (
-    <div>Title</div>
-  )
+    <div className={styles.title}>
+      <p>🚗 Driving theory test practice app! 🚗</p>
+    </div>
+  );
 }
 
-export default Title
+export default Title;
