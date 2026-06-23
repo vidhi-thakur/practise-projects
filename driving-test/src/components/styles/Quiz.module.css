@@ -1,0 +1,19 @@
+.root {
+  padding: 1rem;
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  margin: 1.5rem;
+}
+
+.content {
+  display: flex;
+  width: 100%;
+  margin: 34px 0px;
+  gap: 1rem;
+}
+
+.lhs,
+.rhs {
+  flex: 1;
+}

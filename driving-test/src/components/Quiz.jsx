@@ -1,8 +1,26 @@
+import Question from "./Question";
+import AnswerOptions from "./AnswerOptions";
+import Media from "./Media";
+import Navigation from "./Navigation";
+import QuizHeader from "./QuizHeader";
+import styles from "./styles/Quiz.module.css";
 
 function Quiz() {
   return (
-    <div>Quiz</div>
-  )
+    <div className={styles.root}>
+      <QuizHeader />
+      <div className={styles.content}>
+        <div className={styles.lhs}>
+          <Question />
+          <AnswerOptions />
+        </div>
+        <div className={styles.rhs}>
+          <Media />
+        </div>
+      </div>
+      <Navigation />
+    </div>
+  );
 }
 
-export default Quiz
+export default Quiz;

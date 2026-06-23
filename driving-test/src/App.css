@@ -16,3 +16,8 @@
     font-size: 14px;
   }
 }
+
+#root {
+  background-color: aliceblue;
+  min-height: 100vh;
+}
