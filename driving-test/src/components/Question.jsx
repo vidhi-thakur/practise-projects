@@ -1,8 +1,5 @@
-
-function Question() {
-  return (
-    <div>Question</div>
-  )
+function Question({ currQuestion }) {
+  return <div>Question {currQuestion} </div>;
 }
 
-export default Question
+export default Question;
