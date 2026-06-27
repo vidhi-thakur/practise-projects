@@ -81,7 +81,11 @@ function App() {
 
       <ProgressBar />
       <Title />
-      <Quiz currQuestion={state.currQuestion} dispatch={dispatch} />
+      <Quiz
+        currQuestion={state.currQuestion}
+        dispatch={dispatch}
+        totalQuestions={drivingTestQuestions.length}
+      />
     </>
   );
 }

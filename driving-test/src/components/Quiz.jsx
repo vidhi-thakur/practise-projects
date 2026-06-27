@@ -5,10 +5,10 @@ import Navigation from "./Navigation";
 import QuizHeader from "./QuizHeader";
 import styles from "./styles/Quiz.module.css";
 
-function Quiz({ currQuestion }) {
+function Quiz({ currQuestion, totalQuestions }) {
   return (
     <div className={styles.root}>
-      <QuizHeader />
+      <QuizHeader currQuestion={currQuestion} totalQuestions={totalQuestions} />
       <div className={styles.content}>
         <div className={styles.lhs}>
           <Question currQuestion={currQuestion} />
