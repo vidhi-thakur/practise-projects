@@ -85,6 +85,7 @@ function App() {
         currQuestion={state.currQuestion}
         dispatch={dispatch}
         totalQuestions={drivingTestQuestions.length}
+        testQuestions={drivingTestQuestions}
       />
     </>
   );

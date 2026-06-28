@@ -5,7 +5,8 @@ import Navigation from "./Navigation";
 import QuizHeader from "./QuizHeader";
 import styles from "./styles/Quiz.module.css";
 
-function Quiz({ currQuestion, totalQuestions }) {
+function Quiz({ currQuestion, totalQuestions, testQuestions }) {
+  const curr = testQuestions[currQuestion];
   return (
     <div className={styles.root}>
       <QuizHeader currQuestion={currQuestion} totalQuestions={totalQuestions} />
@@ -15,7 +16,9 @@ function Quiz({ currQuestion, totalQuestions }) {
           <AnswerOptions />
         </div>
         <div className={styles.rhs}>
-          <Media />
+          {curr.type === "video" || curr.type === "image" ? (
+            <Media type={curr.type} video={curr.video} image={curr.image} />
+          ) : null}
         </div>
       </div>
       <Navigation />
