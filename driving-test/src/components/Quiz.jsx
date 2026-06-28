@@ -12,7 +12,7 @@ function Quiz({ currQuestion, totalQuestions, testQuestions }) {
       <QuizHeader currQuestion={currQuestion} totalQuestions={totalQuestions} />
       <div className={styles.content}>
         <div className={styles.lhs}>
-          <Question currQuestion={currQuestion} />
+          <Question question={curr.question} />
           <AnswerOptions />
         </div>
         <div className={styles.rhs}>
