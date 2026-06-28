@@ -5,7 +5,7 @@ import Navigation from "./Navigation";
 import QuizHeader from "./QuizHeader";
 import styles from "./styles/Quiz.module.css";
 
-function Quiz({ currQuestion, totalQuestions, testQuestions }) {
+function Quiz({ currQuestion, totalQuestions, testQuestions, answers, dispatch }) {
   const curr = testQuestions[currQuestion];
   return (
     <div className={styles.root}>
@@ -13,7 +13,11 @@ function Quiz({ currQuestion, totalQuestions, testQuestions }) {
       <div className={styles.content}>
         <div className={styles.lhs}>
           <Question question={curr.question} />
-          <AnswerOptions />
+          <AnswerOptions
+            options={curr.options}
+            selected={answers[currQuestion]}
+            dispatch={dispatch}
+          />
         </div>
         <div className={styles.rhs}>
           {curr.type === "video" || curr.type === "image" ? (
