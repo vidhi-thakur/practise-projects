@@ -1,8 +1,10 @@
-
-function Explaination() {
+import styles from "./styles/Explaination.module.css";
+function Explaination({ text }) {
   return (
-    <div>Explaination</div>
-  )
+    <p className={styles.root}>
+      <i>Explaination: {text}</i>
+    </p>
+  );
 }
 
-export default Explaination
+export default Explaination;

@@ -1,0 +1,16 @@
+.root {
+  max-height: 75vh;
+  overflow-y: auto;
+}
+
+.content {
+  display: flex;
+  width: 100%;
+  margin: 34px 0px;
+  gap: 1rem;
+}
+
+.lhs,
+.rhs {
+  flex: 1;
+}

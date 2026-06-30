@@ -36,7 +36,11 @@ function App() {
       />
       <Title />
       {state.isSubmitted ? (
-        <Result score={score} totalQuestions={drivingTestQuestions.length} />
+        <Result
+          score={score}
+          totalQuestions={drivingTestQuestions.length}
+          testQuestions={drivingTestQuestions}
+        />
       ) : (
         <Quiz
           currQuestion={state.currQuestion}
