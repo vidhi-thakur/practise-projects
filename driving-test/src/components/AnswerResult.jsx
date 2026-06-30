@@ -10,13 +10,7 @@ function AnswerResult({ options, selected, correctAnswer }) {
           style={{
             borderColor: i === selected && "blue",
             backgroundColor:
-              correctAnswer === selected
-                ? i === correctAnswer
-                  ? "green"
-                  : ""
-                : i === selected
-                ? "red"
-                : "",
+              i === correctAnswer ? "green" : i === selected ? "red" : "",
           }}
         >
           {val}{" "}
