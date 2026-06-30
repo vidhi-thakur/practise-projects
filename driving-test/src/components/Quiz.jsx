@@ -5,7 +5,13 @@ import Navigation from "./Navigation";
 import QuizHeader from "./QuizHeader";
 import styles from "./styles/Quiz.module.css";
 
-function Quiz({ currQuestion, totalQuestions, testQuestions, answers, dispatch }) {
+function Quiz({
+  currQuestion,
+  totalQuestions,
+  testQuestions,
+  answers,
+  dispatch,
+}) {
   const curr = testQuestions[currQuestion];
   return (
     <div className={styles.root}>
@@ -25,7 +31,11 @@ function Quiz({ currQuestion, totalQuestions, testQuestions, answers, dispatch }
           ) : null}
         </div>
       </div>
-      <Navigation />
+      <Navigation
+        dispatch={dispatch}
+        currQuestion={currQuestion}
+        totalQuestions={totalQuestions}
+      />
     </div>
   );
 }

@@ -5,6 +5,7 @@ import Quiz from "./components/Quiz";
 import { useReducer } from "react";
 import { quizReducer } from "./state/quizReducer";
 import { drivingTestQuestions } from "./data/test";
+import Result from "./components/Result";
 
 function App() {
   const initialState = {
@@ -18,67 +19,12 @@ function App() {
     initialState
   );
 
+  if (state.isSubmitted) {
+    return <Result />;
+  }
+
   return (
     <>
-      <button
-        onClick={() => {
-          dispatch({
-            type: "NEXT",
-          });
-        }}
-      >
-        next
-      </button>
-      <button
-        onClick={() => {
-          dispatch({
-            type: "PREV",
-          });
-        }}
-      >
-        prev
-      </button>
-      <button
-        onClick={() => {
-          dispatch({
-            type: "UPDATE_ANSWER",
-            value: 1,
-          });
-        }}
-      >
-        1
-      </button>
-      <button
-        onClick={() => {
-          dispatch({
-            type: "UPDATE_ANSWER",
-            value: 2,
-          });
-        }}
-      >
-        2
-      </button>
-
-      <button
-        onClick={() => {
-          dispatch({
-            type: "UPDATE_ANSWER",
-            value: 3,
-          });
-        }}
-      >
-        3
-      </button>
-      <button
-        onClick={() => {
-          dispatch({
-            type: "SUBMIT",
-          });
-        }}
-      >
-        submit
-      </button>
-
       <ProgressBar />
       <Title />
       <Quiz
