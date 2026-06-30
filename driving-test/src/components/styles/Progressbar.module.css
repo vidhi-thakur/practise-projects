@@ -1,0 +1,7 @@
+.root {
+  height: 6px;
+  background-color: aqua;
+  transition: 0.3s ease width;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}

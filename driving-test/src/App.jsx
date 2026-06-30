@@ -25,7 +25,10 @@ function App() {
 
   return (
     <>
-      <ProgressBar />
+      <ProgressBar
+        currQuestion={state.currQuestion}
+        totalQuestions={drivingTestQuestions.length}
+      />
       <Title />
       <Quiz
         currQuestion={state.currQuestion}
