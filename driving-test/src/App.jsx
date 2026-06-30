@@ -19,6 +19,15 @@ function App() {
     initialState
   );
 
+  let score = 0;
+  if (state.isSubmitted) {
+    state.answers.map((val, i) => {
+      if (drivingTestQuestions[i].correctAnswer === val) {
+        score += 1;
+      }
+    }, 0);
+  }
+
   return (
     <>
       <ProgressBar
@@ -27,7 +36,7 @@ function App() {
       />
       <Title />
       {state.isSubmitted ? (
-        <Result />
+        <Result score={score} totalQuestions={drivingTestQuestions.length} />
       ) : (
         <Quiz
           currQuestion={state.currQuestion}

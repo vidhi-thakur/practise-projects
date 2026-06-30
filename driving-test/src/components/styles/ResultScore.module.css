@@ -1,0 +1,13 @@
+.pass {
+  color: green;
+  margin: 1rem 0rem;
+}
+
+.fail {
+  color: red;
+  margin: 1rem 0rem;
+}
+
+.score {
+  margin: 1rem 0rem;
+}
