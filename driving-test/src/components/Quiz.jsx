@@ -4,6 +4,7 @@ import Media from "./Media";
 import Navigation from "./Navigation";
 import QuizHeader from "./QuizHeader";
 import styles from "./styles/Quiz.module.css";
+import Card from "./ui/Card";
 
 function Quiz({
   currQuestion,
@@ -14,7 +15,7 @@ function Quiz({
 }) {
   const curr = testQuestions[currQuestion];
   return (
-    <div className={styles.root}>
+    <Card>
       <QuizHeader currQuestion={currQuestion} totalQuestions={totalQuestions} />
       <div className={styles.content}>
         <div className={styles.lhs}>
@@ -36,7 +37,7 @@ function Quiz({
         currQuestion={currQuestion}
         totalQuestions={totalQuestions}
       />
-    </div>
+    </Card>
   );
 }
 
