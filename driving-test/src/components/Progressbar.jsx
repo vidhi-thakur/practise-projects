@@ -1,6 +1,6 @@
 import styles from "./styles/Progressbar.module.css";
 function Progressbar({ currQuestion, totalQuestions }) {
-  const width = (currQuestion / totalQuestions) * 100;
+  const width = ((currQuestion + 1) / totalQuestions) * 100;
   return (
     <div
       className={styles.root}

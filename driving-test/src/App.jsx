@@ -19,10 +19,6 @@ function App() {
     initialState
   );
 
-  if (state.isSubmitted) {
-    return <Result />;
-  }
-
   return (
     <>
       <ProgressBar
@@ -30,13 +26,17 @@ function App() {
         totalQuestions={drivingTestQuestions.length}
       />
       <Title />
-      <Quiz
-        currQuestion={state.currQuestion}
-        dispatch={dispatch}
-        totalQuestions={drivingTestQuestions.length}
-        testQuestions={drivingTestQuestions}
-        answers={state.answers}
-      />
+      {state.isSubmitted ? (
+        <Result />
+      ) : (
+        <Quiz
+          currQuestion={state.currQuestion}
+          dispatch={dispatch}
+          totalQuestions={drivingTestQuestions.length}
+          testQuestions={drivingTestQuestions}
+          answers={state.answers}
+        />
+      )}
     </>
   );
 }
