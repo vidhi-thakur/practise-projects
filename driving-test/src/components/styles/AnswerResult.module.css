@@ -1,0 +1,13 @@
+.root {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.option {
+  width: 100%;
+  padding: 0.35rem 1rem;
+  border: 1px solid gray;
+  border-radius: 4px;
+  font-size: 14px;
+}

@@ -6,19 +6,19 @@ import AnswerResult from "./AnswerResult";
 import Media from "./Media";
 import Explaination from "./Explaination";
 
-function Result({ score, totalQuestions, testQuestions }) {
+function Result({ score, totalQuestions, testQuestions, answers }) {
   return (
     <div className={styles.root}>
       <ResultScore score={score} totalQuestions={totalQuestions} />
-      {testQuestions.map((curr) => (
+      {testQuestions.map((curr, i) => (
         <Card key={curr.id}>
           <div className={styles.content}>
             <div className={styles.lhs}>
               <Question as="h3" question={curr.question} />
               <AnswerResult
-              // options={curr.options}
-              // selected={answers[currQuestion]}
-              // dispatch={dispatch}
+                options={curr.options}
+                selected={answers[i]}
+                correctAnswer={curr.correctAnswer}
               />
               <Explaination text={curr.explanation} />
             </div>

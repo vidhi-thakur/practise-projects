@@ -40,6 +40,7 @@ function App() {
           score={score}
           totalQuestions={drivingTestQuestions.length}
           testQuestions={drivingTestQuestions}
+          answers={state.answers}
         />
       ) : (
         <Quiz
